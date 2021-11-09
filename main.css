@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Poppins:wght@200;300;400;500;600;700;900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    background: black;
+    height: 50rem;
+    clip-path: polygon(0 0,100% 0,100% 100%,73% 92%,0 100%);
+    
+}
+.container{
+    max-width: 900px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+nav .left a{
+    color: white;
+    margin: auto 1rem;
+    font-size:2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+nav .left a:hover{
+    color: darkcyan;
+    text-decoration: underline;
+}
+nav .right button{
+    text-transform: uppercase;
+}
+.btn{
+    padding: 0.2rem 1.3rem;
+    margin: 0.3rem 0.1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+.btn-primary{
+    background:slateblue ;
+    color:rgb(20, 19, 19) ;
+}
+.btn-primary:hover{
+    color: rgb(19, 209, 19);
+    background-color: teal;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+nav{
+    padding: 0.7rem 0;
+}
+/* Utility classes */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.ohio{
+    margin-top:8rem;
+}
+
+.ohio .left img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+.ohio .right {
+    color: white;
+    margin-top:7rem;
+    margin-left: 3rem;
+    letter-spacing: 0.05em;
+    
+}
+.ohio .right h5{
+    font-size: 1.8rem;
+    color: tomato;
+}
+.ohio .right h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+.ohio .right p{
+    line-height: 1.9rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+
+}
+.oswaldo{
+    margin-top: 1rem;
+}
+section{
+    padding: 3.4rem 0;
+    
+    height: 40rem;
+}
+.about .right{
+    margin: 2.5rem 4rem;
+    
+}
+.about .right h1{
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.about .right h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+
+}
+.about .right p{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    line-height: 2.6rem;
+}
+.about .right span{
+    color: rgb(91, 160, 91);
+}
+.about .left img{
+    margin-top: 3rem;
+    height: 25rem;
+    width: 25rem;
+}
+.about .right .social {
+    display: flex;
+    border: 1px solid transparent;
+ 
+}
+.about .right .social a{
+    margin-top:2rem;
+    margin-right: 1.5rem;
+}
+.about .right .social img{
+    height: 30px;
+    width: 30px;   
+}
+.about .right .social a :hover{
+    background:red;
+    text-decoration: underline;
+
+}
+.service{
+    background-color:#f1edc5;
+    height: 50rem;
+}
+.service .heading{
+    color: #070606;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0.08rem;
+}
+.service .heading span{
+    color: skyblue;
+}
+.service .container .cos{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+.service .container .wrapper img{
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1rem;
+}
+.service .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+}
+.service .wrapper p{
+    margin-bottom: 3rem;
+    font-family: 'lato',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.09rem;
+}
+.service .wrapper .card{
+    background: white;
+    text-align: center;
+}
+.service .wrapper h2{
+    text-align: center;
+    font-weight: 500;
+    color: rebeccapurple;
+}
+.service .wrapper .card:hover{
+    background: rgb(177, 174, 37);
+
+}
+.service .wrapper .card:hover h2{
+    color: white;
+}
+.service .wrapper .card:hover p{
+    color: white;
+}
+.work{
+     background-color:#f1edc5;
+    
+    height: 75rem;
+}
+.work .container .crapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+   background-color: whitesmoke;
+   padding: 3rem;
+   grid-gap: 1rem;
+}
+.work .container h1{
+     font-size: 2.5rem;
+     font-weight: 500;
+     text-align: center;
+}
+.work .container h1 span{
+    color: tomato;
+}
+.work .container p{
+    text-align: center;
+    letter-spacing: 0.09rem;
+    font-size: 1.2rem;
+    margin: 2rem 0.5rem;
+
+}
+.work .crapper img{
+    width: 26rem;
+    height: 25rem;
+}
+.blog{
+    background: black;
+    height: 56rem;
+    clip-path: polygon(0 0,100% 0,100% 100%,66% 90%,0 100%);
+}
+.blog .container h1{
+     color: white;
+     text-align: center;
+     font-size: 2rem;
+     letter-spacing: 0.08rem;
+}
+.blog .container h3:hover{
+    color: yellowgreen;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+.blog .container span{
+    color: blue;
+    margin-right: 0.7rem;
+}
+.blog .container p{
+    font-size: 1.2rem;
+    color: rgb(10, 53, 70);
+    text-align: center;
+   
+}
+.blog .container .po{
+    color: whitesmoke;
+    margin: 2rem 0.5rem;
+}
+.blog .container .bowrap .box img{
+    width: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+.blog .container .bowrap .box {
+    background-color: white;
+}
+.blog .container .bowrap{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
+.blog .container .bowrap .box span{
+    font-size: 1.3rem;
+    margin: 0.6rem;
+    display: inline-block;    
+}
+.blog .container .bowrap .boxcont a{
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+.contact{
+    text-align: center;
+}
+.contact .container h1{
+    font-size: 2.6rem;
+}
+.contact .container span{
+    color: sienna;
+}
+.contact .container  p{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+.contact .container .boxwrapper h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+.contact .container .boxwrapper h5{
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+}
+.contact .boxwrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.contact .boxwrapper img{
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 1rem;
+}
+.contact .boxwrapper .box{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+	padding: 1rem 0;
+	/*border:2px solid yellow;*/
+	background-color: black;
+	color: #f4f4f4;
+	letter-spacing: 0.08em;
+
+}
+.footer-icons img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+footer .logo{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+/* ############### media quuery ################ */
+@media (min-width:576px)
+{
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px)
+{
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px)
+{
+    .container{
+        max-width: 880px;
+    }
+}
+@media (max-width:1024px)
+{
+    header{
+
+    }
+    .ohio .left img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 6rem;
+    }
+    .work .container .crapper{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .work{
+        background-color:#f1edc5;
+       
+       height: 98rem;
+    }
+    .ohio .right p{
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .about .right .social img{
+        height: 20px;
+        width: 20px;   
+    }
+    section .about{
+        padding: 3.4rem 0;
+        
+        height: 50rem;
+    }
+    .about .right p{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        line-height: 2rem;
+    }
+    .ohio .right h5{
+        font-size: 1.5rem;
+        color: tomato;
+    }
+    .ohio .right h2{
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+    }
+    nav .left a{
+        font-size:1.5rem;
+    }
+    .btn{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .blog{
+            height: 52rem;
+    }
+    .blog .container p{
+        font-size: 1rem;
+        
+    }
+    .blog .container .bowrap .boxcont a{
+      
+        font-size: 1rem;
+        
+      }
+      .contact .container h1{
+        font-size: 2.2rem;
+    }
+    .contact .container  p{
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    .contact .boxwrapper img{
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+    }
+    .contact .container .boxwrapper h1{
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+    }
+    .contact .container .boxwrapper h5{
+        font-size: 0.8rem;
+        letter-spacing: 0.04em;
+    }
+   
+}
+
